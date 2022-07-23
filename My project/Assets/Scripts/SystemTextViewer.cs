@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public enum SystemType {  Money = 0, Build }
+public enum SystemType {  Money = 0, Build , MaxLevel}
 
 public class SystemTextViewer : MonoBehaviour
 {
@@ -25,6 +25,9 @@ public class SystemTextViewer : MonoBehaviour
                 break;
             case SystemType.Build:
                 textSystem.text = "System : Invalid build tower...";
+                break;
+            case SystemType.MaxLevel:
+                textSystem.text = "System : Can't level up anymore...";
                 break;
         }
 
