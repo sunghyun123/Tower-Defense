@@ -10,8 +10,16 @@ public class Reload : MonoBehaviour
     [SerializeField]
     private SystemTextViewer systemTextViewer;
     int count;
+    public int RerollCost;
     public void ReLoad()
     {
+
+        if (RerollCost > playerGold.CurrentGold) // 리롤 비용이 플레이어 현재 소지금 보다 많을 시
+        {
+            systemTextViewer.PrintText(SystemType.Money);
+            return;
+        }
+
         int n = -1;
         for (int i = 0; i < TowerArray.Length; i++)
         {
@@ -31,10 +39,13 @@ public class Reload : MonoBehaviour
                     TowerArray[num].gameObject.SetActive(true);
                     count++;
                 }
-               
-                    n = num;
+
+                n = num;
             }
         }
         count = 0;
+        playerGold.CurrentGold -= RerollCost;
     }
+
+
 }

@@ -9796,8 +9796,9 @@ MonoBehaviour:
   - {fileID: 194653529}
   - {fileID: 274164940}
   - {fileID: 1487872210}
-  playerGold: {fileID: 0}
-  systemTextViewer: {fileID: 0}
+  playerGold: {fileID: 1494517224}
+  systemTextViewer: {fileID: 368096137}
+  RerollCost: 500
 --- !u!4 &1703087473
 Transform:
   m_ObjectHideFlags: 0
