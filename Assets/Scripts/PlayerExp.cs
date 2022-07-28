@@ -53,6 +53,8 @@ public class PlayerExp : MonoBehaviour
             
             playerLevel.LevelUp();
         }
+
+        int n = 0; // 테스트용 -----------------------------------------------------------
     }
 
    
