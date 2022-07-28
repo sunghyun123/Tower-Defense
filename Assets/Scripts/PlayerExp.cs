@@ -10,7 +10,7 @@ public class PlayerExp : MonoBehaviour
     private float currentExp; //Exp 현재 최대치
     private bool isLevelUp = false; //래밸업이 가능한 상태인지
 
-    private int avc;// jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+
     
     private PlayerLevel playerLevel;
 
@@ -55,7 +55,6 @@ public class PlayerExp : MonoBehaviour
             playerLevel.LevelUp();
         }
 
-        int n = 0; // 테스트용 -----------------------------------------------------------
     }
 
    
